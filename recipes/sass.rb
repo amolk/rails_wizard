@@ -1,7 +1,8 @@
-unless recipes.include? 'haml'
-  gem 'haml', '>= 3.0.0'
-end
+gem 'sass'
 
+if recipes.include? 'git'
+  append_file ".gitignore", "public/stylesheets/*.css"
+end
 __END__
 
 name: SASS
