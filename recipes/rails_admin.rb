@@ -1,9 +1,9 @@
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 after_bundler do
-  generate 'rails_admin:install_admin'
-  rake 'admin:copy_assets'
-  rake 'admin:ckeditor_download' if config['ckeditor']
+  generate 'rails_admin'
+  rake 'rails_admin:copy_assets'
+  rake 'rails_admin:ckeditor_download' if config['ckeditor']
 end
 
 __END__
