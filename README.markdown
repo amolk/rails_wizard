@@ -31,7 +31,7 @@ line options included.
 If you wish to skip the interactive recipe selector, you may provide
 instead a list of recipes with the `-r` option:
 
-    rails_wizard new APP_NAME -r jquery mongo_mapper sass
+    rails_wizard new APP_NAME -r activerecord rspec cucumber capybara factory_girl devise haml jquery nifty_generators rails_admin heroku sass compass simple_form devise cancan paperclip rails_basics git
 
 This will automatically generate a Rails template with the provided
 recipes and begin the app generator.
