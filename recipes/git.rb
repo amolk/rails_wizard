@@ -1,5 +1,6 @@
+git :init
+
 after_everything do
-  git :init
   git :add => '.'
   git :commit => '-m "Initial import."'
 end
