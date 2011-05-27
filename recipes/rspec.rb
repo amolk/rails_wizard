@@ -6,6 +6,7 @@ end
 
 after_bundler do
   generate 'rspec:install'
+  run "echo '--format documentation' >> .rspec"
 end
 
 __END__
